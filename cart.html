@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Корзина | Дариподелу</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--<link rel="icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-touch-icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icons/apple-touch-icon-152x152.png">-->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,300italic,400italic,600italic,700italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="js/bxslider/jquery.bxslider.css" rel="stylesheet">
+    <link href="js/select2/dist/css/select2.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="inner-page">
+    <div class="menu-line"></div>
+    <div class="main-wrapper">
+        <header class="main-header">
+            <div class="container">
+                <div class="row">
+                    <nav class="main-nav">
+                        <ul class="nav-catalogue">
+                            <li>
+                                <a href="category.html">Каталог продукции</a>
+                            </li>
+                        </ul>
+                        <ul class="shop-cart">
+                            <li>
+                                <a href="#">Корзина:  21 450 руб.</a>
+                            </li>
+                        </ul>
+                        <ul class="main-menu inl-blck">
+                            <li>
+                                <a href="static.html">Методы нанесения</a>
+                            </li>
+                            <li>
+                                <a href="#">«Дари по делу»</a>
+                            </li>
+                            <li>
+                                <a href="#">Контактная информация</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="container" itemscope itemtype="http://schema.org/Organization">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="phone-box">
+                            <span class="phone block" itemprop="telephone">8 981 803-96-47</span>
+                            <span class="schedule block" itemprop="openingHours">по будням с 8:00 до 20:00</span>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="logo-box">
+                            <a class="logo" href="./"><img src="img/logo-min.png" alt="Дариподелу"></a>
+                            <span class="tagline block">Бизнес-подарки на любой вкус</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="hd-line"></div>
+        <div class="bd-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10">
+                        <div class="main-content">
+                            <h1>Корзина</h1>
+                            <form action="#" method="post">
+                            <table class="shop-cart">
+                                <thead>
+                                <tr>
+                                    <th>Наименование</th>
+                                    <th>Цена за штуку</th>
+                                    <th>Размер</th>
+                                    <th>Количество</th>
+                                    <th class="price">Общая сумма</th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="name-box" rowspan="4">
+                                        <img src="uploads/shop-cart/t-shirt-yellow.jpg" alt="">
+                                        <div class="name">Футболка Regent 140</div>
+                                        <div class="prop-value">Желтая</div>
+                                        <div class="clear-left"></div>
+                                    </td>
+                                    <td class="item-price" data-value="160.00">160.00 руб.</td>
+                                    <td class="size">S</td>
+                                    <td class="count-field-box"><input class="count-field" id="count-item-1" name="count-item-1" type="text" value="2"> шт.</td>
+                                    <td class="price" data-value="320.00">320<span class="small">.00 руб.</span></td>
+                                    <td class="delete-link-box"><span class="delete-link" title="Удалить"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="item-price" data-value="160.00">160.00 руб.</td>
+                                    <td class="size">M</td>
+                                    <td class="count-field-box"><input class="count-field" id="count-item-2" name="count-item-2" type="text" value="15"> шт.</td>
+                                    <td class="price" data-value="3300.00">3 300<span class="small">.00 руб.</span></td>
+                                    <td class="delete-link-box"><span class="delete-link" title="Удалить"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="item-price" data-value="160.00">160.00 руб.</td>
+                                    <td class="size">L</td>
+                                    <td class="count-field-box"><input class="count-field" id="count-item-3" name="count-item-3" type="text" value="5"> шт.</td>
+                                    <td class="price" data-value="800.00">800<span class="small">.00 руб.</span></td>
+                                    <td class="delete-link-box"><span class="delete-link" title="Удалить"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="item-price" data-value="160.00">160.00 руб.</td>
+                                    <td class="size">XL</td>
+                                    <td class="count-field-box"><input class="count-field" id="count-item-4" name="count-item-4" type="text" value="3"> шт.</td>
+                                    <td class="price" data-value="480.00">480<span class="small">.00 руб.</span></td>
+                                    <td class="delete-link-box"><span class="delete-link" title="Удалить"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="delimiter" colspan="6"></td>
+                                </tr>
+                                <tr>
+                                    <td class="name-box" rowspan="4">
+                                        <img src="uploads/shop-cart/t-shirt-orange.jpg" alt="">
+                                        <div class="name">Футболка Regent 140</div>
+                                        <div class="prop-value">Оранжевая</div>
+                                        <div class="clear-left"></div>
+                                    </td>
+                                    <td class="item-price" data-value="180.00">180.00 руб.</td>
+                                    <td class="size">S</td>
+                                    <td class="count-field-box"><input class="count-field" id="count-item-5" name="count-item-5" type="text" value="1"> шт.</td>
+                                    <td class="price" data-value="180.00">180<span class="small">.00 руб.</span></td>
+                                    <td class="delete-link-box"><span class="delete-link" title="Удалить"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="item-price" data-value="180.00">180.00 руб.</td>
+                                    <td class="size">M</td>
+                                    <td class="count-field-box"><input class="count-field" id="count-item-6" name="count-item-6" type="text" value="2"> шт.</td>
+                                    <td class="price" data-value="360.00">360<span class="small">.00 руб.</span></td>
+                                    <td class="delete-link-box"><span class="delete-link" title="Удалить"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="item-price" data-value="180.00">180.00 руб.</td>
+                                    <td class="size">L</td>
+                                    <td class="count-field-box"><input class="count-field" id="count-item-7" name="count-item-7" type="text" value="1"> шт.</td>
+                                    <td class="price" data-value="180.00">180<span class="small">.00 руб.</span></td>
+                                    <td class="delete-link-box"><span class="delete-link" title="Удалить"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="item-price" data-value="180.00">180.00 руб.</td>
+                                    <td class="size">XL</td>
+                                    <td class="count-field-box"><input class="count-field" id="count-item-8" name="count-item-8" type="text" value="1"> шт.</td>
+                                    <td class="price" data-value="180.00">180<span class="small">.00 руб.</span></td>
+                                    <td class="delete-link-box"><span class="delete-link" title="Удалить"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="delimiter" colspan="6"></td>
+                                </tr>
+                                <tr>
+                                    <td class="name-box" rowspan="4">
+                                        <img src="uploads/shop-cart/t-shirt-yellow.jpg" alt="">
+                                        <div class="name">Футболка Regent 140</div>
+                                        <div class="prop-value">Желтая</div>
+                                        <div class="clear-left"></div>
+                                    </td>
+                                    <td class="item-price" data-value="160.00">160.00 руб.</td>
+                                    <td class="size">S</td>
+                                    <td class="count-field-box"><input class="count-field" id="count-item-9" name="count-item-9" type="text" value="2"> шт.</td>
+                                    <td class="price" data-value="320.00">320<span class="small">.00 руб.</span></td>
+                                    <td class="delete-link-box"><span class="delete-link" title="Удалить"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="item-price" data-value="160.00">160.00 руб.</td>
+                                    <td class="size">M</td>
+                                    <td class="count-field-box"><input class="count-field" id="count-item-10" name="count-item-10" type="text" value="15"> шт.</td>
+                                    <td class="price" data-value="3300.00">3 300<span class="small">.00 руб.</span></td>
+                                    <td class="delete-link-box"><span class="delete-link" title="Удалить"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="item-price" data-value="160.00">160.00 руб.</td>
+                                    <td class="size">L</td>
+                                    <td class="count-field-box"><input class="count-field" id="count-item-11" name="count-item-11" type="text" value="5"> шт.</td>
+                                    <td class="price" data-value="800.00">800<span class="small">.00 руб.</span></td>
+                                    <td class="delete-link-box"><span class="delete-link" title="Удалить"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="item-price" data-value="160.00">160.00 руб.</td>
+                                    <td class="size">XL</td>
+                                    <td class="count-field-box"><input class="count-field" id="count-item-12" name="count-item-12" type="text" value="3"> шт.</td>
+                                    <td class="price" data-value="480.00">480<span class="small">.00 руб.</span></td>
+                                    <td class="delete-link-box"><span class="delete-link" title="Удалить"></span></td>
+                                </tr>
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <td class="total-label" colspan="4">Общая сумма:</td>
+                                    <td class="total-price" data-value="5800.00">5 800<span class="small">. 00 руб.</span></td>
+                                    <td></td>
+                                </tr>
+                                </tfoot>
+                            </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <div class="checkout-form-block">
+                            <h6>Ваши персональные данные</h6>
+                            <div class="checkout-form-box">
+                                <form action="#" method="post" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" id="frm_fio" name="frm_fio" value="" placeholder="Имя Фамилия">
+                                    </div>
+                                    <div class="cols">
+                                        <div class="form-group col">
+                                            <input class="form-control" type="text" id="frm_phone" name="frm_phone" value="" placeholder="Контактный телефон">
+                                        </div>
+                                        <div class="form-group col">
+                                            <input class="form-control" type="text" id="frm_email" name="frm_email" value="" placeholder="Электронная почта">
+                                        </div>
+                                    </div>
+                                    <p>Загрузить изображение логотипа для рассчета стоимости нанесения</p>
+                                    <div class="input-file-box">
+                                        <div class="input-file-item">
+                                            <input class="file-field" type="text" value="">
+                                            <span class="delete-item"></span>
+                                            <input type="file" name="attached_file[]">
+                                        </div>
+                                        <div class="input-file-item">
+                                            <input class="file-field" type="text" value="">
+                                            <span class="attach-item"></span>
+                                            <input type="file" name="attached_file[]">
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="btn-group">
+                                        <button class="btn btn-default" type="submit">Отправить на расчет</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-box">
+        <div class="ft-lines"></div>
+        <footer class="container">
+            <div class="copyright">&copy; «Дари по делу» 2015. Бизнес-сувениры и промо-продукция</div>
+        </footer>
+    </div>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<!-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bxslider/jquery.bxslider.min.js"></script>
+<script src="js/select2/dist/js/select2.full.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
