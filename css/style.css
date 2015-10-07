@@ -463,12 +463,18 @@ table.shop-cart td.total-price {
     color: #f00;
 }
 
-.feedback-form-box .btn-group .btn-default,
-.checkout-form-box .btn-group .btn-default {
+.feedback-form-box .btn-group .btn-default {
     background: #a172cc;
     -webkit-box-shadow: 0px 6px 7px 0px rgba(155, 140, 168, 0.85);
     -moz-box-shadow:    0px 6px 7px 0px rgba(155, 140, 168, 0.85);
     box-shadow:         0px 6px 7px 0px rgba(155, 140, 168, 0.85);
+}
+
+.checkout-form-box .btn-group .btn-default {
+    background: #a172cc;
+    -webkit-box-shadow: 0px 16px 12px 0px rgba(155, 140, 168, 0.45);
+    -moz-box-shadow:    0px 16px 12px 0px rgba(155, 140, 168, 0.45);
+    box-shadow:         0px 16px 12px 0px rgba(155, 140, 168, 0.45);
 }
 
 ul.ctg-list li .items-count {
@@ -1672,11 +1678,32 @@ table.shop-cart tr td.delimiter {
 }
 
 .checkout-form-block {
-    background: url("../img/y-trapez-bg.png") 0px 0px no-repeat;
-    height: 585px;
+    background: #ffe858;
     margin: 0 auto 170px;
-    padding: 78px 0 0;
+    padding: 50px 0 17px;
+    position: relative;
     width: 1240px;
+}
+
+.checkout-form-block b.top {
+    background: url("../img/y-trapez-bg-t.png") 0px 0px no-repeat;
+    display: block;
+    height: 31px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -31px;
+}
+
+.checkout-form-block b.bottom {
+    background: url("../img/y-trapez-bg-bt.png") 0px 0px no-repeat;
+    display: block;
+    height: 55px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -55px;
+    z-index: 3;
 }
 
 .checkout-form-block h6 {
@@ -1747,6 +1774,14 @@ table.shop-cart tr td.delimiter {
     line-height: 30px;
     padding: 0 12px;
     width: 100%;
+}
+
+.checkout-form-box .btn-group {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -82px;
+    z-index: 5;
 }
 
 .checkout-form-box .btn-group .btn {
