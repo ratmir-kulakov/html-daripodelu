@@ -9,11 +9,24 @@ $(function(){
         });
     }
 
-    if( $("select.choice") ) {
+    if( $("select.choice").length ) {
         $("select.choice").select2({
             //allowClear: true,
             width: "resolve",
             minimumResultsForSearch: 15
+        }).on("change", function(){
+            var idVal = "select2-" + $(this).attr("id") + "-container",
+                inputSpan = null;
+
+            inputSpan = $("#" + idVal).parents(".select2-container").eq(0);
+            if( $(this).val() == ''){
+                inputSpan.removeClass('not-empty');
+
+            }
+            else
+            {
+                inputSpan.addClass('not-empty');
+            }
         });
     }
 
