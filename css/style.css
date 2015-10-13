@@ -966,8 +966,8 @@ ul.shop-cart li {
 }
 
 .articles-inf-block .uf-articles-list li {
-    background: url("../img/article-li.jpg") 1px 5px no-repeat;
-    line-height: 120%;
+    background: url("../img/article-li.jpg") 1px 4px no-repeat;
+    line-height: 122%;
     margin-bottom: 30px;
     padding: 0 20px 0 41px;
 }
@@ -977,7 +977,7 @@ ul.shop-cart li {
 }
 
 .news-inf-block {
-    padding: 87px 0 0 30px;
+    padding: 86px 0 0 30px;
 }
 
 .news-inf-block h2 {
@@ -991,14 +991,15 @@ ul.shop-cart li {
 
 .news-inf-block ul.news-list-box li {
     list-style: none;
-    margin-bottom: 30px;
+    line-height: 150%;
+    margin-bottom: 27px;
 }
 
 .news-inf-block ul.news-list-box li time {
     display: block;
     font-size: 20px;
     font-style: italic;
-    margin-bottom: 4px;
+    margin-bottom: 0px;
 }
 
 .news-inf-block ul.news-list-box a {
@@ -1478,17 +1479,17 @@ ul.secondary-nav-menu li a:hover {
 }
 
 .product .order-table th {
-    padding-bottom: 15px;
+    padding-bottom: 19px;
     text-align: left;
 }
 
 .product .order-table td {
-    padding: 9px 0;
+    padding: 7px 0 8px;
 }
 
 .product .order-table td.field-box {
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     text-align: right;
     width: 120px;
 }
@@ -1549,11 +1550,11 @@ ul.secondary-nav-menu li a:hover {
 .product .description,
 .product .description *,
 .product .properties * {
-    line-height: 140%;
+    line-height: 137%;
 }
 
 .product .description {
-    margin-bottom: 28px;
+    margin-bottom: 30px;
 }
 
 .product .properties {
