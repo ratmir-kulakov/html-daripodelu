@@ -1,5 +1,10 @@
 $(function(){
 
+    if( $(".feedback-form-box textarea").length ){
+        $(".feedback-form-box textarea").textareaAutoSize();
+    }
+
+
     if( $(".news-list-box").length ){
         $(".news-list-box").bxSlider({
             mode: 'vertical',

@@ -1919,6 +1919,7 @@ table.shop-cart tr td.delimiter {
 .feedback-form-box input {}
 
 .feedback-form-box textarea {
+    height: 29px;
     max-height: 180px;
 }
 
