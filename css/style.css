@@ -868,6 +868,7 @@ ul.shop-cart li {
     display: inline-block;
     margin: 0 5px 50px;
     width: 239px;
+    position: relative;
     text-align: center;
     text-decoration: none;
     word-spacing: normal;
@@ -881,13 +882,46 @@ ul.shop-cart li {
     height: 158px;
 }
 
-.main-ctg-list a span {
-    font-size: 32px;
+.main-ctg-list a:hover img,
+.main-ctg-list a.active img {
+    position: relative;
+    z-index: 11;
 }
 
-.main-ctg-list a:hover span {
+.main-ctg-list a span {
+    font-size: 32px;
+    position: relative;
+    z-index: 14;
+}
+
+.main-ctg-list a:hover span,
+.main-ctg-list a.active span{
     background: none;
     border-bottom: none;
+}
+
+.main-ctg-list a:hover:nth-child(odd) span.panel,
+.main-ctg-list a.active:nth-child(odd) span.panel{
+    background: url("../img/main-ctg-sel-1.png") 0px 0px no-repeat;
+    display: block;
+    height: 328px;
+    width: 314px;
+    position: absolute;
+    top: -44px;
+    left: -41px;
+    z-index: 10;
+}
+
+.main-ctg-list a:hover:nth-child(even) span.panel,
+.main-ctg-list a.active:nth-child(even) span.panel {
+    background: url("../img/main-ctg-sel-2.png") 0px 0px no-repeat;
+    display: block;
+    height: 300px;
+    width: 314px;
+    position: absolute;
+    top: -31px;
+    left: -50px;
+    z-index: 5;
 }
 
 .infblock-3-box {
