@@ -21,16 +21,25 @@ $(function(){
             minimumResultsForSearch: 15
         }).on("change", function(){
             var idVal = "select2-" + $(this).attr("id") + "-container",
-                inputSpan = null;
+                inputSpan = null,
+                pseudoSpan = null,
+                pseudoBtn = null;
 
             inputSpan = $("#" + idVal).parents(".select2-container").eq(0);
             if( $(this).val() == ''){
                 inputSpan.removeClass('not-empty');
-
             }
             else
             {
                 inputSpan.addClass('not-empty');
+                pseudoSpan = $("<span />")
+                pseudoBtn = $("<span />")
+                pseudoSpan.addClass("pseudo-span");
+                pseudoBtn.attr("title", "Сбросить фильтр").addClass("pseudo-btn");
+
+                pseudoBtn.on("click", function(){});
+
+                inputSpan.append(pseudoSpan, pseudoBtn);
             }
         });
     }
